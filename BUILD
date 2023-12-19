@@ -8,7 +8,12 @@ python_requirement(
     requirements=["pip"],
 )
 
+python_requirement(
+    name="wheel",
+    requirements=["wheel"],
+)
+
 python_requirement(name="chumpy", requirements=["chumpy>=0.70"],
 dependencies=[":pip",
-              ":setuptools"],
-)
+              ":setuptools",
+              ":wheel"])
